@@ -1,0 +1,101 @@
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#task {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+  font-size: 1rem;
+}
+
+#task:focus {
+  border-color: #74ebd5;
+  outline: none;
+}
+
+#sendTask {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #74ebd5;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1rem;
+}
+
+#sendTask:hover {
+  background-color: #5dc2b9;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  border-left: 5px solid #74ebd5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  flex-grow: 1;
+}
+
+.delButton {
+  all: unset; /* Zera todos os estilos herdados */
+  color: #ff4d4d;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 0.2s ease;
+}
+
+.delButton:hover {
+  color: #d60000;
+}
